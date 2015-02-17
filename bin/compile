@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/../vendor/autoload.php';
+
+use Phar\Util\Compiler;
+
+$compiler = new Compiler();
+$compiler->compile(
+	'swiftmailer.phar',
+	'swiftmailer.phar',
+	'swiftmailer/swiftmailer/lib',
+	'vendor/swiftmailer/swiftmailer/lib/swift_required.php'
+);

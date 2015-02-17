@@ -1,0 +1,9 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "@stable",
+        "symfony/finder": "~2.3"
+    },
+    "autoload": {
+        "psr-0": { "Phar": "src/" }
+    }
+}
